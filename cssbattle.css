@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+}
+.row{
+    display: flex;
+   margin-top: 100px;
+    justify-content: center;
+    
+}
+.white , .pink {
+    width: 70px;
+    height: 50px;
+}
+.white{
+    background-color: white;
+}
+.pink{
+    background-color: pink;
+    transform : translateY(50px)
+}
