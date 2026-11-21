@@ -12,7 +12,7 @@ plt.pie(sales,
         colors=color,)
 
 plt.show()
-
+#-----------------------------------------------------
 #bar chart
 import matplotlib.pyplot as plt
 
@@ -32,4 +32,18 @@ plt.ylabel("Marks Scored")
 plt.title("Student Exam Performance")
 
 # 5. Display the chart
+plt.show()
+
+#----------------------------------------------------
+#stacked chart
+import matplotlib.pyplot as plt
+months=["jan" , "feb", "march" , "april"]
+product_A = [20 , 30 , 45 , 20]
+product_B = [15 , 25 , 20 , 30]
+plt.figure(figsize=(5,5))
+plt.bar(months , product_A , color="green" , width=0.3)
+plt.bar(months , product_B , color="brown" , width=0.3)
+plt.xlabel("months")
+plt.ylabel("products")
+plt.title("store")
 plt.show()

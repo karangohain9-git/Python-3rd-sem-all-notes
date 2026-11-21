@@ -63,23 +63,23 @@
 # plt.figure(figsize = (6,6))
 # plt.pie(expense , labels=categories , autopct ="%0.0f%%" , startangle=30)
 # plt.show()
-
+# import matplotlib.pyplot as plt
+# subjects=["math", "physics","chemistry","cs","english"]
+# scores =[88 , 81 ,91,95,81]
+# plt.figure(figsize=(5,5))
+# plt.bar(subjects , scores , color="green" , width=0.5)
+# plt.xlabel("subjects")
+# plt.ylabel("marks")
+# plt.title("student exam performance")
+# plt.show()
 import matplotlib.pyplot as plt
-import numpy as np
-
-categories = ["Q1", "Q2", "Q3", "Q4"]
-sales_2025 = [40, 55, 60, 75]
-sales_2026 = [50, 65, 70, 90]
-
-x = np.arange(len(categories))  # Numeric positions: [0, 1, 2, 3]
-width = 0.35  # Width of each individual bar
-
-# Shift first set left by width/2, second set right by width/2
-plt.bar(x - width / 2, sales_2025, width, label="2025", color="skyblue")
-plt.bar(x + width / 2, sales_2026, width, label="2026", color="orange")
-
-plt.xticks(x, categories)  # Put category names back on the X-axis
-plt.ylabel("Sales (in Lakhs)")
-plt.title("Quarterly Sales Comparison")
-plt.legend()
+months=["jan" , "feb", "march" , "april"]
+product_A = [20 , 30 , 45 , 20]
+product_B = [15 , 25 , 20 , 30]
+plt.figure(figsize=(5,5))
+plt.bar(months , product_A , color="green" , width=0.3)
+plt.bar(months , product_B , color="brown" , width=0.3)
+plt.xlabel("months")
+plt.ylabel("products")
+plt.title("store")
 plt.show()
