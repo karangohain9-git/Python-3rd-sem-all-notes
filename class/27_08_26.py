@@ -50,7 +50,7 @@ x = np.linspace(0 , 360 , 100)#higher range gives smoother graphs
 y= np.deg2rad(x)
 z= np.sin(y)
 plt.plot(x,z)
-plt.show
+plt.show()
 
 #PRACTICAL 1 : FIND ALL THE TRIGONOMETRIC VALUES OF MOST COMMONLY USED ANGLES 
 # import numpy as np 
